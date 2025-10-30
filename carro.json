@@ -1,7 +1,28 @@
 {
-  "id": "number",
-  "marca": "string",
-  "modelo": "string",
-  "anio": "number",
-  "precio": "number"
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Carro",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number",
+      "description": "Identificador único del carro"
+    },
+    "marca": {
+      "type": "string",
+      "description": "Marca del carro"
+    },
+    "modelo": {
+      "type": "string",
+      "description": "Modelo del carro"
+    },
+    "anio": {
+      "type": "number",
+      "description": "Año de fabricación del carro"
+    },
+    "precio": {
+      "type": "number",
+      "description": "Precio del carro"
+    }
+  },
+  "required": ["id", "marca", "modelo", "anio", "precio"]
 }
